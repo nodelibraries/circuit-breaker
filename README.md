@@ -1,17 +1,94 @@
-# Easy Circuit Breaker
+# Circuit Breaker
 
-**easy-circuit-breaker** is a lightweight and powerful solution designed to protect your applications from unexpected failures. Built on top of the robust [opossum](https://www.npmjs.com/package/opossum) circuit breaker library, it offers an intuitive API to seamlessly manage and control failure handling for your requests. Whether you're building a microservice architecture or managing complex network interactions, Easy Circuit Breaker ensures your system remains resilient and fault-tolerant.
+**@nodelibraries/circuit-breaker** is a lightweight and powerful solution designed to protect your applications from unexpected failures. Built on top of the robust [opossum](https://www.npmjs.com/package/opossum) circuit breaker library, it offers an intuitive API to seamlessly manage and control failure handling for your requests. Whether you're building a microservice architecture or managing complex network interactions, Circuit Breaker ensures your system remains resilient and fault-tolerant.
 
 <p align="center">
   <img src="easy-circuit-breaker.png" width="200"/>
 </p>
+
+<p align="center">
+  <a href="https://github.com/nodelibraries/circuit-breaker">
+    <img src="https://img.shields.io/github/stars/nodelibraries/circuit-breaker?style=social" alt="GitHub stars"/>
+  </a>
+  <a href="https://www.npmjs.com/package/@nodelibraries/circuit-breaker">
+    <img src="https://img.shields.io/npm/v/@nodelibraries/circuit-breaker.svg" alt="npm version"/>
+  </a>
+  <a href="https://www.npmjs.com/package/@nodelibraries/circuit-breaker">
+    <img src="https://img.shields.io/npm/dm/@nodelibraries/circuit-breaker.svg" alt="npm downloads"/>
+  </a>
+  <a href="https://github.com/nodelibraries/circuit-breaker/blob/main/LICENSE">
+    <img src="https://img.shields.io/npm/l/@nodelibraries/circuit-breaker.svg" alt="License"/>
+  </a>
+</p>
+
+## Features
+
+- 🛡️ **Resilient by Default** - Protect your applications from cascading failures
+- 🎯 **Simple API** - Easy to use with minimal configuration
+- 🔄 **Multiple Levels** - Support for endpoint, service, application, database, and external service levels
+- ⚡ **Event-Driven** - Comprehensive event handling for monitoring and logging
+- 🎨 **Framework Agnostic** - Works with NestJS, Express, and any Node.js application
+- 📊 **Statistics** - Built-in statistics tracking for all circuit breakers
+- 🔧 **Flexible Configuration** - Customize timeout, error thresholds, and more
+- 🚀 **TypeScript Support** - Full TypeScript support with type safety
+- 📦 **Lightweight** - Minimal dependencies, built on top of opossum
+
+## Quick Start
+
+```bash
+npm install @nodelibraries/circuit-breaker
+```
+
+```typescript
+import {
+  CircuitBreaker,
+  CircuitBreakerLevel,
+} from '@nodelibraries/circuit-breaker';
+import axios from 'axios';
+
+const circuitBreaker = new CircuitBreaker({
+  timeout: () => console.error('Request timeout'),
+  failure: () => console.error('Request failed'),
+  open: () => console.error('Circuit breaker opened'),
+});
+
+async function fetchUserData(userId: number) {
+  const response = await axios.get(`https://api.example.com/users/${userId}`);
+  return response.data;
+}
+
+async function getUser(userId: number) {
+  try {
+    const user = await circuitBreaker.execute({
+      level: CircuitBreakerLevel.External,
+      name: 'fetchUserData',
+      requestFn: fetchUserData,
+      args: [userId],
+      fallbackFn: () => ({ id: userId, name: 'Unknown User' }),
+    });
+    return user;
+  } catch (error) {
+    console.error('Failed to fetch user:', error);
+    throw error;
+  }
+}
+```
+
+## Documentation
+
+📚 **[Full Documentation](https://nodelibraries.github.io/circuit-breaker/)** - Complete guide with examples and API reference
+
+- [Installation Guide](https://nodelibraries.github.io/circuit-breaker/guide/installation)
+- [Quick Start](https://nodelibraries.github.io/circuit-breaker/guide/quick-start)
+- [API Reference](https://nodelibraries.github.io/circuit-breaker/api/)
+- [Examples](https://nodelibraries.github.io/circuit-breaker/examples/)
 
 ## Installation
 
 To install the library, run the following command:
 
 ```bash
-npm install easy-circuit-breaker
+npm install @nodelibraries/circuit-breaker
 ```
 
 ## Usage
@@ -19,7 +96,10 @@ npm install easy-circuit-breaker
 ### Importing the Library
 
 ```typescript
-import { CircuitBreaker, CircuitBreakerLevel } from 'easy-circuit-breaker';
+import {
+  CircuitBreaker,
+  CircuitBreakerLevel,
+} from '@nodelibraries/circuit-breaker';
 ```
 
 ### nest.js example
@@ -27,7 +107,10 @@ import { CircuitBreaker, CircuitBreakerLevel } from 'easy-circuit-breaker';
 ```typescript
 import { HttpException, HttpStatus, Injectable, Logger } from '@nestjs/common';
 import axios from 'axios';
-import { CircuitBreaker, CircuitBreakerLevel } from 'easy-circuit-breaker';
+import {
+  CircuitBreaker,
+  CircuitBreakerLevel,
+} from '@nodelibraries/circuit-breaker';
 
 @Injectable()
 export class AppService {
@@ -92,7 +175,10 @@ export class AppService {
 ```typescript
 import express from 'express';
 import axios from 'axios';
-import { CircuitBreaker, CircuitBreakerLevel } from 'easy-circuit-breaker';
+import {
+  CircuitBreaker,
+  CircuitBreakerLevel,
+} from '@nodelibraries/circuit-breaker';
 
 const app = express();
 const port = 3000;
@@ -272,7 +358,7 @@ If you find a security vulnerability, please refer to our [Security Policies and
 
 ## Author
 
-easy-circuit-breaker is developed and maintained by [Ferhat Yalçın](https://github.com/ylcnfrht).
+@nodelibraries/circuit-breaker is developed and maintained by [Ferhat Yalçın](https://github.com/ylcnfrht).
 
 ## License
 
