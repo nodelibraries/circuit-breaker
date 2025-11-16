@@ -140,3 +140,4 @@ vite.config.ts.timestamp-*
 
 # VSCode
 .vscode
+docs copy/
