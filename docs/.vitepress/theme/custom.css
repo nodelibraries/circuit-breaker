@@ -1,0 +1,10 @@
+.buy-me-coffee-header:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .buy-me-coffee-header {
+    display: none !important;
+  }
+}
+
