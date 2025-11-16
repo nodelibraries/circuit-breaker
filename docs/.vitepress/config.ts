@@ -18,6 +18,10 @@ export default defineConfig({
         text: 'GitHub',
         link: 'https://github.com/nodelibraries/circuit-breaker',
       },
+      {
+        text: '☕ Buy Me a Coffee',
+        link: 'https://www.buymeacoffee.com/ylcnfrht',
+      },
     ],
 
     sidebar: {
@@ -76,9 +80,13 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright:
-        'Copyright © 2025 ylcnfrht | <a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">☕ Buy Me a Coffee</a>',
+      message: 'Released under the MIT License. <a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank" style="margin-left: 10px;">☕ Buy Me a Coffee</a>',
+      copyright: 'Copyright © 2025 ylcnfrht',
+    },
+
+    editLink: {
+      pattern: 'https://github.com/nodelibraries/circuit-breaker/edit/main/docs/:path',
+      text: 'Edit this page on GitHub',
     },
   },
 });

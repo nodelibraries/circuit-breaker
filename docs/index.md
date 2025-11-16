@@ -133,11 +133,13 @@ No additional configuration required! The library works out of the box.
 
 ## Support
 
-If you find this project helpful, please consider supporting it:
+If you find this project helpful, please consider supporting its development:
 
-<a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40" width="145">
-</a>
+<p align="center">
+  <a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
+  </a>
+</p>
 
 ## Next Steps
 

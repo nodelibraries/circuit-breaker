@@ -19,9 +19,6 @@
   <a href="https://github.com/nodelibraries/circuit-breaker/blob/main/LICENSE">
     <img src="https://img.shields.io/npm/l/@nodelibraries/circuit-breaker.svg" alt="License"/>
   </a>
-  <a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="28" width="120">
-  </a>
 </p>
 
 ## Features
@@ -351,6 +348,16 @@ The following options can be provided when creating a circuit breaker:
 - `enableSnapshots`: Enables snapshot events for statistics. **Default: false**
 - `rotateBucketController`: Shares `EventEmitter` for multiple circuit breakers. **Default: null**
 
+## Support
+
+If you find this project helpful, please consider supporting its development:
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
+  </a>
+</p>
+
 ## Contributing
 
 We welcome contributions of all kinds! To contribute, please check out the [Contributing Guide](Contributing.md).
@@ -362,14 +369,6 @@ If you find a security vulnerability, please refer to our [Security Policies and
 ## Author
 
 @nodelibraries/circuit-breaker is developed and maintained by [ylcnfrht](https://github.com/ylcnfrht).
-
-## Support
-
-If you find this project helpful, please consider supporting it:
-
-<a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40" width="145">
-</a>
 
 ## License
 
