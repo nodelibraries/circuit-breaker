@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: 'Circuit Breaker',
+  title: '@nodelibraries/circuit-breaker',
   description:
     'A lightweight wrapper around opossum for easier circuit breaker management',
   base: '/circuit-breaker/',

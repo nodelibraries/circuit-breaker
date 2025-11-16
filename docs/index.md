@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: circuit-breaker
+  name: '@nodelibraries/circuit-breaker'
   text: Circuit Breaker for Node.js
   tagline: |
     A lightweight wrapper around opossum for easier circuit breaker management.
@@ -135,7 +135,7 @@ No additional configuration required! The library works out of the box.
 
 If you find this project helpful, please consider supporting its development:
 
-<p align="center">
+<p align="left">
   <a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
   </a>
