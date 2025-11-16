@@ -15,9 +15,6 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/nodelibraries/circuit-breaker
-    - theme: alt
-      text: ☕ Buy Me a Coffee
-      link: https://www.buymeacoffee.com/ylcnfrht
 
 features:
   - icon: 🛡️

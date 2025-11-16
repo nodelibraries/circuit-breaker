@@ -18,10 +18,6 @@ export default defineConfig({
         text: 'GitHub',
         link: 'https://github.com/nodelibraries/circuit-breaker',
       },
-      {
-        text: '☕ Buy Me a Coffee',
-        link: 'https://www.buymeacoffee.com/ylcnfrht',
-      },
     ],
 
     sidebar: {
