@@ -19,6 +19,9 @@
   <a href="https://github.com/nodelibraries/circuit-breaker/blob/main/LICENSE">
     <img src="https://img.shields.io/npm/l/@nodelibraries/circuit-breaker.svg" alt="License"/>
   </a>
+  <a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="28" width="120">
+  </a>
 </p>
 
 ## Features
@@ -359,6 +362,14 @@ If you find a security vulnerability, please refer to our [Security Policies and
 ## Author
 
 @nodelibraries/circuit-breaker is developed and maintained by [ylcnfrht](https://github.com/ylcnfrht).
+
+## Support
+
+If you find this project helpful, please consider supporting it:
+
+<a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40" width="145">
+</a>
 
 ## License
 

@@ -77,7 +77,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024 ylcnfrht',
+      copyright: 'Copyright © 2025 ylcnfrht | <a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">☕ Buy Me a Coffee</a>',
     },
   },
 });

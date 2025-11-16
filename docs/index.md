@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/nodelibraries/circuit-breaker
+    - theme: alt
+      text: ☕ Buy Me a Coffee
+      link: https://www.buymeacoffee.com/ylcnfrht
 
 features:
   - icon: 🛡️
@@ -130,6 +133,14 @@ npm install @nodelibraries/circuit-breaker
 ```
 
 No additional configuration required! The library works out of the box.
+
+## Support
+
+If you find this project helpful, please consider supporting it:
+
+<a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40" width="145">
+</a>
 
 ## Next Steps
 
