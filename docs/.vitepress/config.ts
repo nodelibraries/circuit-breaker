@@ -18,6 +18,10 @@ export default defineConfig({
         text: 'GitHub',
         link: 'https://github.com/nodelibraries/circuit-breaker',
       },
+      {
+        text: '☕ Buy Me a Coffee',
+        link: 'https://www.buymeacoffee.com/ylcnfrht',
+      },
     ],
 
     sidebar: {
@@ -77,7 +81,8 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2025 ylcnfrht | <a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">☕ Buy Me a Coffee</a>',
+      copyright:
+        'Copyright © 2025 ylcnfrht | <a href="https://www.buymeacoffee.com/ylcnfrht" target="_blank">☕ Buy Me a Coffee</a>',
     },
   },
 });
