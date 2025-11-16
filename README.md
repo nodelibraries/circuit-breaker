@@ -358,7 +358,7 @@ If you find a security vulnerability, please refer to our [Security Policies and
 
 ## Author
 
-@nodelibraries/circuit-breaker is developed and maintained by [Ferhat Yalçın](https://github.com/ylcnfrht).
+@nodelibraries/circuit-breaker is developed and maintained by [ylcnfrht](https://github.com/ylcnfrht).
 
 ## License
 
